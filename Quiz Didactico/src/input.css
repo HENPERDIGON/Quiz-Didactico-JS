@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities {
+    .center-col {
+        @apply flex flex-col items-center justify-center;
+    }
+
+
+    .center-row {
+        @apply flex flex-row items-center justify-center;
+
+    }
+
+    .paddingMQ {
+        @apply py-2;
+    }
+    
+}
+
+@layer base {
+    h1 {
+      @apply text-[2rem];
+    }
+    h2 {
+      @apply text-[1.5rem] font-mainFont;
+    }
+
+    h3 {
+       @apply  text-[1.3rem] font-mainFont
+    }
+  }
+
+@layer components {
+
+    
+
+    .btn {
+
+        padding: 1rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+        color: black;
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        
+    }
+
+
+    .card_catg {
+        @apply w-4/5 rounded-xl border-2 border-cafe-TOW-O bg-[#f1c3af] transition-all duration-150 ease-in-out;
+    }
+
+    .card {
+        @apply bg-[#df9778] max-w-[60rem] rounded-3xl w-90% flex flex-col items-center justify-center ;
+    }
+
+    .card_alternativas {
+        @apply cursor-pointer py-4 px-1 rounded-xl transition-all duration-150 ease-in-out border-2 border-cafe-TOW-O;
+    }
+
+    .card_btns {
+        @apply  bg-[#CABDF0] max-w-3/4 text-cafe-TOW-O  mx-auto my-0 px-8 py-2 rounded-xl border-[#BE84F0]  border-2;
+    }
+
+    .card_standard {
+        @apply  bg-[#df9778] max-w-[50rem] rounded-3xl w-90% flex flex-col items-center justify-center py-8
+    }
+
+    .btnVocab {
+        @apply p-2 my-1 border-2 border-cafe-TOW-O rounded-xl hover:bg-teal-600 hover:text-white transition-all duration-150 text-sm }
+
+    .btnRemoveWord {
+        @apply border-2 border-double border-green-800 rounded-lg px-3 hover:bg-amber-500 hover:border-orange-600
+    }
+
+    .card_words {
+        @apply p-[2rem] w-[90%]  max-w-[10rem] bg-red-500 m-2 rounded-md 
+    }
+
+    .definition {
+       @apply rounded-md border-2 border-double border-zinc-800 px-[1rem]
+    }
+
+};
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vocabulario</title>
+
+    <link rel="preload" href="../styles.css" as="style" />
+    <link href="../../dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div
+      class="todos-los-divs flex flex-col items-center justify-center drop-shadow-2xl pb-5"
+      id="todos"
+    >
+      <div class="pb-10 text-4xl pt-3">
+        <a href="../../index.html">
+          <h1>
+            <span class="text-rose-900 font-medium">Desafios - </span><span class="text-rojo-TOW font-bold" id="tow"> The Other Way</span> <span class="font-bold">Spanish</span>
+          </h1>
+        </a>
+        
+      </div>
+      <button class="btnVocab" id="btnClearStorage">Borrar Vocabulario</button>
+      <div class="card" id="contenedorGram">
+        <div
+          id="showVocab"
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 items-center justify-center gap-8 p-5"
+        ></div>
+      </div>
+    </div>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="vocabulario.js" type="module"></script>
+  </body>
+</html>
